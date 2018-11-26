@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6">
+
+        <ImageView
+            android:id="@+id/iv_oval_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/center_oval" />
+
+        <TextView
+            android:id="@+id/tv_create_new_notification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/iv_oval_icon"
+            android:layout_alignTop="@+id/iv_oval_icon"
+            android:layout_alignRight="@+id/iv_oval_icon"
+            android:layout_alignBottom="@+id/iv_oval_icon"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/create_new_notification"
+            android:textColor="@color/text_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_rectangle_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="13dp"
+            android:src="@mipmap/rectangle" />
+
+        <TextView
+            android:id="@+id/tv_fragment_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/iv_rectangle_icon"
+            android:layout_alignTop="@+id/iv_rectangle_icon"
+            android:layout_alignRight="@+id/iv_rectangle_icon"
+            android:layout_alignBottom="@+id/iv_rectangle_icon"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp" />
+
+        <RelativeLayout
+            android:id="@+id/delete_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/blue" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/minus"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/add_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/blue" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/plus"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
